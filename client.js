@@ -29,9 +29,9 @@ const connect = function () {
       conn.write("Move: up")
     }, 4000);
 
-    //   setInterval(() => {
-    //     conn.write("Move: up")
-    //   }, 500)
+      // setInterval(() => {
+      //   conn.write("Move: up")
+      // }, 500)
   })
 
   //we can register another connect callback with no issues
