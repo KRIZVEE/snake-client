@@ -3,7 +3,7 @@ let connection;
 
 const handleUserInput = function (stdin,c) {
 
-  console.log('c : ',c);
+  // console.log('c : ',c);
 
   stdin.on('data', (key) => {
     // \u0003 maps to ctrl+c input
@@ -28,6 +28,14 @@ const handleUserInput = function (stdin,c) {
       c.write("Move: right")
 
       // console.log('right');
+    }
+    if (key === 'h') {
+      c.write("Say: h!$$")
+
+      // console.log('right');
+    }
+    if (key === 'p') {
+      c.write("Say: $$$")
     }
 
     process.stdout.write('.');
