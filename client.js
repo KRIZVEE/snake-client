@@ -26,7 +26,7 @@ const connect = function () {
       conn.write("Move: up")
     }, 3000);
     setTimeout(() => {
-      conn.write("Move: right")
+      conn.write("Move: up")
     }, 4000);
 
     //   setInterval(() => {
